@@ -1,0 +1,102 @@
+1.Write a blog on Difference between HTTP1.1 vs HTTP2
+    HTTP (Hypertext Transfer Protocol) is the backbone of the World Wide Web. 
+    It is a set of rules for exchanging information between web servers and clients. 
+    HTTP has undergone several upgrades since its inception, with the latest two major versions being HTTP/1.1 and HTTP/2.
+    HTTP/1.1 has been in use since 1999, and it has been the standard protocol for the internet for over two decades. 
+    However, with the rise of more complex websites, the limitations of HTTP/1.1 have become apparent. 
+    This led to the development of HTTP/2, which was designed to address some of the limitations of HTTP/1.1.
+    In this blog post, we will explore the key differences between HTTP/1.1 and HTTP/2.
+
+Performance:
+One of the biggest differences between HTTP/1.1 and HTTP/2 is the way they handle performance. 
+HTTP/1.1 uses a request/response model, which means that each request made by the client requires a separate connection to the server. 
+This can result in slow page load times, especially when there are multiple resources that need to be loaded.
+
+HTTP/2, on the other hand, uses a multiplexing model, which allows multiple requests to be sent over a single connection. 
+This means that resources can be loaded in parallel, resulting in faster page load times.
+
+Compression:
+HTTP/1.1 does not have built-in support for compression, so web developers have had to use techniques such as gzip 
+compression to reduce the size of resources being sent over the network.
+
+HTTP/2, on the other hand, has built-in support for compression. 
+This means that resources can be compressed before they are sent over the network, resulting in faster page load times.
+
+Server Push:
+HTTP/1.1 requires the client to request each resource individually, which can result in additional round trips to the server. 
+This can be particularly slow when the client needs to load multiple resources.
+
+HTTP/2 introduces the concept of server push, which allows the server to send resources to the client before the client requests them. 
+This can result in faster page load times, as resources are available to the client before they are requested.
+
+Header Compression:
+HTTP/1.1 headers are plain text, which means they can be large and take up a significant amount of bandwidth. 
+This can result in slower page load times.
+
+HTTP/2 uses header compression, which reduces the size of headers by using a compression algorithm. 
+This can significantly reduce the amount of bandwidth required to send headers, resulting in faster page load times.
+
+In conclusion, HTTP/2 is a significant improvement over HTTP/1.
+1 when it comes to performance. The use of multiplexing, compression, server push, and header compression 
+all contribute to faster page load times, which is particularly important for complex websites. 
+As more websites move to HTTP/2, users can expect to see significant improvements in page load times and overall browsing experience.
+
+
+
+2.Write a blog about objects and its internal representation in Javascript
+    Objects are a fundamental part of the JavaScript programming language and they are used extensively in web development.
+    In this blog post, we will explore what objects are, how they are created, and their internal representation in JavaScript.
+
+What are Objects?
+    In JavaScript, objects are a collection of properties that represent real-world objects, such as a person, car, or book. 
+    Objects are defined as a key-value pair, where the key is a string that identifies the property 
+    and the value is the data associated with that property.
+    Objects can contain multiple properties, and each property can have a different data type, such as strings, numbers, or 
+    even other objects. Properties can also have methods, which are functions that can be called on the object.
+
+Creating Objects in JavaScript
+    There are two main ways to create objects in JavaScript: object literals and object constructors.
+
+Object Literals
+    Object literals are a simple and convenient way to create objects in JavaScript. 
+    They are defined using curly braces, and properties are separated by commas.
+
+    For example, we can create an object representing a person using an object literal like this:
+        arduino code
+        const person = {
+        name: "Mohanraj",
+        age: 26,
+        occupation: "Developer"
+        };
+
+Object Constructors
+    Object constructors are a more traditional way to create objects in JavaScript. 
+    They are defined using a constructor function, which is a special function that is used to create objects.
+
+    For example, we can create an object representing a person using a constructor function like this:
+
+        javascript code
+        function Person(name, age, occupation) {
+        this.name = name;
+        this.age = age;
+        this.occupation = occupation;
+        }
+
+const person = new Person("John", 30, "Developer");
+
+Internal Representation of Objects in JavaScript
+    In JavaScript, objects are internally represented as a collection of key-value pairs, 
+    where the key is a string and the value is a reference to the data associated with that property.
+
+    Each object in JavaScript has a hidden property called a prototype, 
+    which allows objects to inherit properties and methods from other objects. 
+    When a property or method is called on an object, JavaScript first looks for that property or method in the object itself. 
+    If it is not found, JavaScript then looks for it in the object's prototype chain until it reaches the top-level Object prototype.
+
+    In addition, JavaScript objects are dynamic, which means that properties can be added, removed, or changed at any time. This makes JavaScript objects highly flexible and versatile, but it can also lead to potential errors if not used carefully.
+
+Conclusion
+    Objects are a fundamental part of the JavaScript programming language, and they provide a flexible and 
+    versatile way to represent real-world objects in code. Whether you are creating objects 
+    using object literals or object constructors, it is important to understand how objects are internally 
+    represented in JavaScript in order to effectively work with them in your code.
